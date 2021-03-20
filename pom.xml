@@ -2,20 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.halo.mall</groupId>
     <artifactId>halomall</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>halomall</name>
-    <description>HaloMall聚合服务</description>
+    <description>HaloMall</description>
     <packaging>pom</packaging>
-
     <modules>
-        <module>halomall-coupon</module>
-        <module>halomall-member</module>
-        <module>halomall-order</module>
-        <module>halomall-product</module>
         <module>halomall-ware</module>
+        <module>halomall-product</module>
+        <module>halomall-order</module>
+        <module>halomall-member</module>
+        <module>halomall-coupon</module>
+        <module>halomall-common</module>
+        <module>renren-fast</module>
     </modules>
-
 </project>

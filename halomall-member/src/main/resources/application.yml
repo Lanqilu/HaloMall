@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://81.70.151.52:3306/halomall_ums
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 81.70.151.52:8848
+  application:
+    name: halomall-member
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+
+server:
+  port: 8000

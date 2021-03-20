@@ -5,19 +5,24 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.4.3</version>
+        <version>2.1.8.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.halo.mail.coupon</groupId>
+    <groupId>com.halo.mail</groupId>
     <artifactId>halomall-coupon</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>halomall-coupon</name>
-    <description>HaloMaill优惠券服务</description>
+    <description>HaloMall优惠券服务</description>
     <properties>
         <java.version>1.8</java.version>
-        <spring-cloud.version>2020.0.1</spring-cloud.version>
+        <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>com.halo.mall</groupId>
+            <artifactId>halomall-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
