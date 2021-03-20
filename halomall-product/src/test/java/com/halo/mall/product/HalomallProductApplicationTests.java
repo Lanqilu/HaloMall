@@ -10,13 +10,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.List;
 
 @SpringBootTest
-class HalomallProductApplicationTests {
+public class HalomallProductApplicationTests {
 
     @Autowired
     BrandService brandService;
 
     @Test
-    void contextLoads() {
+    public void contextLoads() {
         BrandEntity brandEntity = new BrandEntity();
         brandEntity.setName("华为");
         brandService.save(brandEntity);
@@ -24,7 +24,7 @@ class HalomallProductApplicationTests {
     }
 
     @Test
-    void updateTest() {
+    public void updateTest() {
         BrandEntity brandEntity = new BrandEntity();
         brandEntity.setBrandId(1L);
         brandEntity.setDescript("华为");
@@ -32,7 +32,7 @@ class HalomallProductApplicationTests {
     }
 
     @Test
-    void queryTest() {
+    public void queryTest() {
         List<BrandEntity> list = brandService.list(new QueryWrapper<BrandEntity>().eq("brand_id", 1L));
         list.forEach(System.out::println);
     }

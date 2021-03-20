@@ -31,7 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
-renren-fast-vue
 renren-fast
 renren-generator
 **/resources/src
@@ -39,3 +38,5 @@ renren-generator
 mvnw.cmd
 mvnw
 LICENSE
+**/node_modules
+**/build

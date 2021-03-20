@@ -15,5 +15,9 @@
         <module>halomall-member</module>
         <module>halomall-coupon</module>
         <module>halomall-common</module>
+        <module>halomall-gateway</module>
     </modules>
+
+    　
+
 </project>
