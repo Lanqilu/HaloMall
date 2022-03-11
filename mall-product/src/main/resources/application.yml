@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    username: root
+    password: mogu2018
+    url: jdbc:mysql://mysql:3306/halo_mall_pms
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos:8848
+    alicloud:
+      access-key: LTAI5tRGm2omTeKzKcFfUwW9
+      secret-key: NIhOLnPOnNFEWyiOkIUyTf5SiiSyHT
+      oss:
+        endpoint: oss-cn-hangzhou.aliyuncs.com
+  application:
+    name: halomall-product
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+logging:
+  level:
+    com.halo.mall: debug
+server:
+  port: 10001
