@@ -3,21 +3,32 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.halo.mall</groupId>
-    <artifactId>halomall</artifactId>
+    <artifactId>halo-mall</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>halomall</name>
+    <name>HaloMall</name>
     <description>HaloMall</description>
     <packaging>pom</packaging>
     <modules>
-        <module>halomall-ware</module>
-        <module>halomall-product</module>
-        <module>halomall-order</module>
-        <module>halomall-member</module>
-        <module>halomall-coupon</module>
-        <module>halomall-common</module>
-        <module>halomall-gateway</module>
+        <module>mall-common</module>
+        <module>mall-coupon</module>
+        <module>mall-gateway</module>
+        <module>mall-member</module>
+        <module>mall-order</module>
+        <module>mall-product</module>
+        <module>mall-support</module>
+        <module>mall-system</module>
+        <module>mall-ware</module>
     </modules>
-
-    　
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

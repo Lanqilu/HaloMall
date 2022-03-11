@@ -11,7 +11,7 @@
     <groupId>com.halo.mall</groupId>
     <artifactId>mall-coupon</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Coupon</name>
+    <name>mall-coupon</name>
     <description>HaloMall优惠券服务</description>
     <properties>
         <java.version>1.8</java.version>
@@ -20,7 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>com.halo.mall</groupId>
-            <artifactId>halo-common</artifactId>
+            <artifactId>mall-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>

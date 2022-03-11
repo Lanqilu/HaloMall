@@ -11,8 +11,8 @@
     <groupId>com.halo.mall</groupId>
     <artifactId>mall-ware</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Ware</name>
-    <description>HaloMall仓储服务</description>
+    <name>mall-ware</name>
+    <description>HaloMall 仓储服务</description>
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
@@ -20,7 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>com.halo.mall</groupId>
-            <artifactId>mall-ommon</artifactId>
+            <artifactId>mall-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
